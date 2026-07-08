@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://b0pch4htb2f87"]
+
+[ext_resource type="Script" uid="uid://cml1stgokhm3v" path="res://addons/sound_player/example/example_script.gd" id="1_rybtg"]
+
+[node name="SoundPlayerExample" type="Node2D" unique_id=1628771919]
+script = ExtResource("1_rybtg")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=397739177]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Camera2D" unique_id=368650290]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1890926144]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=2061187025]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer" unique_id=1268869796]
+layout_mode = 2
+
+[node name="TL" type="Button" parent="CanvasLayer/MarginContainer/Control" unique_id=385418047]
+unique_name_in_owner = true
+layout_mode = 1
+offset_right = 82.0
+offset_bottom = 31.0
+text = "Play Here"
+metadata/_edit_use_anchors_ = true
+
+[node name="TR" type="Button" parent="CanvasLayer/MarginContainer/Control" unique_id=657780657]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -82.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Play Here"
+metadata/_edit_use_anchors_ = true
+
+[node name="BL" type="Button" parent="CanvasLayer/MarginContainer/Control" unique_id=1250727857]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_right = 82.0
+grow_vertical = 0
+text = "Play Here"
+metadata/_edit_use_anchors_ = true
+
+[node name="BR" type="Button" parent="CanvasLayer/MarginContainer/Control" unique_id=575689533]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -82.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Play Here"
+metadata/_edit_use_anchors_ = true
+
+[node name="Ctr" type="Button" parent="CanvasLayer/MarginContainer/Control" unique_id=1012540329]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -15.5
+offset_right = 52.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play Neutral"
+metadata/_edit_use_anchors_ = true
